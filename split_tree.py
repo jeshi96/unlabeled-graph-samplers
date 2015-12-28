@@ -2,15 +2,15 @@
 #
 # split_tree.py
 #
-# Dependencies: networkx, matplotlib.pyplot
+# Dependencies: networkx, matplotlib.pyplot, random, parse_graphs
 #
 #
 # This module can be used to:
 #
-#   * Compute the original graph corresponding to a given distance-hereditary or
-#     three-leaf power split tree string (typically this string will have been
-#     computed by our distance-hereditary or three-leaf power samplers, which
-#     are implemented in Maple)
+#   * Compute the original graph corresponding to a given distance-hereditary,
+#     three-leaf power, or parity split tree string (typically this string 
+#     will have been computed by our distance-hereditary or three-leaf power 
+#     samplers, which are implemented in Maple)
 #
 #   * Draw the original graph to the screen or export a drawing of the graph
 #     to a file
@@ -31,8 +31,14 @@
 #
 ################################################################################
 
+import sys
+sys.path.insert(0,'C:/Users/Jessica Shi/Documents/Princeton/COS 397/code/util/')
+import parse_graphs_format as parse
+
 import matplotlib.pyplot as plt
 import networkx as nx
+from random import randint
+from random import shuffle
 
 # Every node receives a distinct id value
 current_id = 0
@@ -77,6 +83,46 @@ class CliqueNode(Node):
         if extremities is None:
             extremities = []
         self.extremities = extremities
+
+
+class BipartiteNode(Node):
+    """
+    Extend Node; represent a bipartite node in a split tree
+
+    Attributes:
+    nodes    -- list of Nodes connected to the vertices of the bipartite node, except the entry node
+    entry    -- node in which the bipartite node is entered through the tree
+    bp       -- bipartite graph associated with the node
+    bp_nodes -- list of nodes from the bipartite graph, associating each node of the bipartite graph
+                with a node in nodes (by index); the last node in bp_nodes is associated with the entry node
+    """
+    def __init__(self, nodes=None, entry=None):
+        super(BipartiteNode, self).__init__()
+        self.entry = entry
+        if nodes is None:
+            self.nodes = []
+            self.bp = nx.Graph()
+            self.bp.add_node(1)
+            self.bp_nodes = [1]
+        else:
+            self.entry = entry
+            self.nodes = nodes
+            bp_list = parse.get_bp_con(len(self.nodes)+1)
+            bp_index = randint(0,len(bp_list)-1)
+            self.bp = bp_list[bp_index]
+            self.bp_nodes = self.bp.nodes()
+            shuffle(self.bp_nodes)
+    def generateBp(self):
+        if len(self.nodes) == 0:
+            self.bp = nx.Graph()
+            self.bp.add_node(1)
+            self.bp_nodes = [1]
+        else:
+            bp_list = parse.get_bp_con(len(self.nodes)+1)
+            bp_index = randint(0,len(bp_list)-1)
+            self.bp = bp_list[bp_index]
+            self.bp_nodes = self.bp.nodes()
+            shuffle(self.bp_nodes)
 
 
 class Leaf(Node):
@@ -186,10 +232,12 @@ def string_to_split_tree(s, parent_node=None):
     Z -- a leaf node
     KR -- a clique node root (can only be used as the root of the tree)
     SR -- a star node root (can only be used as the root of the tree)
+    BR -- a bipartite node root (can only be used as the root of the tree)
     K -- a clique that has been entered from another node
     SX -- a star that has been entered from another node at one of its
           extremities
     SC -- a star that has been entered from another node at its center
+    B - a bipartite node that has been entered from another node
     e -- an edge that connects two nodes
 
     For example:
@@ -239,13 +287,25 @@ def string_to_split_tree(s, parent_node=None):
                 else:
                     s.extremities.append(string_to_split_tree(subtree, s))
             return s
+        elif root == "BR":
+            s = BipartiteNode()
+            first = True
+            nodes=[]
+            for subtree in custom_split(neighbors):
+                if first:
+                    s.entry = string_to_split_tree(subtree, s)
+                    first = False
+                else:
+                    s.nodes.append(string_to_split_tree(subtree, s))
+            s.generateBp()
+            return s
         elif root == "e":
             subtrees = custom_split(neighbors)
             subtree0pieces = subtrees[0].split("(", 1)
             root0 = subtree0pieces[0]
             neighbors0 = subtree0pieces[1][:-1]
-            s0 = StarNode()
             if root0 == "SX":
+                s0 = StarNode()
                 s0.extremities.append(string_to_split_tree(subtrees[1], s0))
                 first = True
                 for subtree in custom_split(neighbors0):
@@ -256,10 +316,23 @@ def string_to_split_tree(s, parent_node=None):
                         s0.extremities.append(string_to_split_tree(subtree, s0))
                 return s0
             elif root0 == "SC":
+                s0 = StarNode()
                 s0.center = string_to_split_tree(subtrees[1], s0)
                 for subtree in custom_split(neighbors0):
                     s0.extremities.append(string_to_split_tree(subtree, s0))
                 return s0
+            elif root0 == "B": 
+                s = BipartiteNode()
+                s.nodes.append(string_to_split_tree(subtrees[1],s))
+                first = True
+                for subtree in custom_split(neighbors0):
+                    if first:
+                        s.entry = string_to_split_tree(subtree, s)
+                        first = False
+                    else:
+                        s.nodes.append(string_to_split_tree(subtree, s))
+                s.generateBp()
+                return s
             else:
                 raise Exception("???")
         elif root == "K":
@@ -284,6 +357,13 @@ def string_to_split_tree(s, parent_node=None):
                     first = False
                 else:
                     s.extremities.append(string_to_split_tree(subtree, s))
+            return s
+        elif root == "B":
+            s = BipartiteNode()
+            s.entry = parent_node
+            for subtree in custom_split(neighbors):
+                s.nodes.append(string_to_split_tree(subtree, s))
+            s.generateBp()
             return s
         else:
             raise Exception("???")
@@ -330,6 +410,8 @@ is_clique = lambda node: is_of_type(node, "CliqueNode")
 
 is_star = lambda node: is_of_type(node, "StarNode")
 
+is_bp = lambda node: is_of_type(node, "BipartiteNode")
+
 
 def find_adjacent_leafs(leaf):
     """
@@ -355,6 +437,16 @@ def find_adjacent_leafs(leaf):
             leafs.append(node)
             if not node.neighbor.visited:
                 to_visit.insert(0, node.neighbor)
+        elif is_bp(node):
+            if node.entry.visited:
+                for i in range(len(node.nodes)):
+                    n = node.nodes[i]
+                    n_bp = node.bp_nodes[i]
+                    bp_entry = node.bp_nodes[len(node.bp_nodes)-1]
+                    if node.bp.has_edge(bp_entry,n_bp) and not n.visited:
+                        to_visit.insert(0, n)
+            else:
+                to_visit.insert(0,node.entry)
         elif is_clique(node):
             for extremity in node.extremities:
                 if not extremity.visited:
@@ -407,6 +499,12 @@ def get_nodes(tree):
             for extremity in node.extremities:
                 if not extremity.visited:
                     to_visit.insert(0, extremity)
+        elif is_bp(node):
+            if not node.entry.visited:
+                to_visit.insert(0,node.entry)
+            for n in node.nodes:
+                if not n.visited:
+                    to_visit.insert(0, n)
         elif is_star(node):
             if not node.center.visited:
                 to_visit.insert(0, node.center)

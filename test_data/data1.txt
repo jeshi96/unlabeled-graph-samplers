@@ -1,0 +1,83 @@
+Z(B(Z, B(B(B(K(B(K(Z, Z), K(Z, Z, Z)), B(K(B(B(B(B(Z, Z), Z), Z, Z), K(Z, Z), Z), Z), Z)), K(Z, B(K(Z, B(K(Z, Z), Z)), Z))), K(B(B(B(K(B(Z, Z), Z), Z), B(Z, B(Z, Z))), Z), Z)), Z)))
+
+BR(K(Z, B(Z, Z), B(Z, K(B(Z, B(Z, K(Z, Z), Z, Z)), B(K(B(B(Z, Z), B(Z, K(B(Z, B(K(Z, B(Z, B(K(Z, Z), Z)), B(Z, Z)), Z)), Z))), Z), Z, K(Z, Z), K(B(K(B(Z, B(B(B(Z, Z), B(K(B(Z, Z), Z), Z)), B(Z, Z))), Z, Z), B(B(Z, Z), Z)), B(Z, Z)))))), Z, Z, Z)
+
+BR(K(B(K(Z, B(Z, K(Z, Z))), Z), Z), B(K(B(B(Z, Z), Z), Z), Z, Z), Z, Z)
+
+Z(B(K(B(K(Z, Z), Z, Z), Z, Z), Z))
+
+BR(B(B(Z, B(Z, Z)), Z), Z, Z)
+
+BR(B(Z, Z), Z, Z, Z)
+
+BR(Z, Z, Z, Z)
+
+BR(Z, Z, Z)
+
+BR(Z, Z, Z, Z)
+
+BR(Z, Z, Z)
+
+BR(Z, Z, Z)
+
+BR(Z, Z, Z)
+
+BR(K(Z, Z, Z), Z, Z)
+
+BR(K(Z, B(K(Z, B(Z, K(B(B(Z, B(K(Z, Z), B(K(Z, B(Z, K(B(B(Z, Z), Z), Z))), B(K(B(Z, B(B(B(Z, K(B(Z, Z), Z)), Z), K(B(K(Z, Z), Z), B(Z, Z)))), B(Z, Z)), Z))), B(K(B(B(B(Z, K(Z, B(K(B(B(K(Z, Z), K(B(Z, K(Z, Z), Z), B(B(Z, Z), Z))), Z, Z), B(Z, Z)), B(Z, K(Z, Z))))), Z), B(K(Z, B(Z, Z)), B(B(B(Z, Z), Z), B(Z, K(Z, Z)), Z))), Z, Z), Z)), Z), Z))), Z)), Z, Z)
+
+BR(Z, Z, Z)
+
+BR(Z, B(B(K(B(Z, Z), B(K(B(B(Z, Z), B(K(Z, Z), B(Z, K(B(K(B(K(B(Z, Z), B(Z, B(B(B(K(Z, Z), Z), Z), K(B(Z, B(K(Z, Z), B(Z, B(Z, B(Z, Z))))), Z)), Z)), B(Z, K(B(B(Z, Z), Z), B(B(Z, K(Z, Z)), B(K(B(Z, Z), B(K(B(Z, Z, Z), B(Z, Z)), Z)), B(B(Z, Z), K(Z, Z)))), B(K(Z, Z), B(Z, Z))))), Z), Z), Z)), B(Z, Z))), Z), Z)), Z), B(K(B(K(Z, Z, Z), Z), Z), B(Z, Z))), Z, Z)
+
+BR(Z, Z, Z, Z)
+
+BR(Z, Z, Z)
+
+BR(Z, Z, Z)
+
+BR(K(B(K(Z, B(Z, Z)), B(Z, Z)), Z), Z, Z)
+
+BR(Z, K(B(Z, K(Z, Z), Z), B(B(B(Z, Z), B(B(Z, Z, Z), Z)), B(B(Z, B(B(Z, B(B(Z, Z), Z)), Z)), B(K(Z, Z), K(B(Z, Z), Z))))), B(Z, Z), B(Z, Z))
+
+BR(B(B(Z, B(B(Z, B(K(Z, Z), B(Z, Z))), Z)), K(Z, B(B(K(B(Z, Z), B(Z, Z)), Z), K(B(B(K(B(Z, B(Z, Z)), Z), Z), B(B(Z, K(B(B(Z, Z), Z), Z)), Z)), B(K(B(B(K(Z, Z, B(Z, Z)), Z), B(B(Z, Z, Z), Z)), Z), B(B(Z, B(Z, K(Z, Z))), Z, K(Z, Z))), Z)), Z)), B(Z, B(K(Z, Z), Z, Z), Z), Z, Z)
+
+BR(Z, B(K(B(Z, Z, Z), Z), Z), Z, Z)
+
+BR(Z, Z, Z)
+
+BR(Z, Z, Z, Z)
+
+BR(K(B(B(B(Z, K(B(Z, Z), B(Z, Z))), K(Z, B(B(B(B(Z, B(K(Z, B(Z, B(B(Z, Z), K(Z, Z)))), Z)), K(B(B(K(Z, B(B(B(Z, B(K(B(K(Z, B(K(Z, Z), Z)), Z, Z, Z), B(Z, Z)), K(Z, Z))), Z, B(K(Z, Z, Z), Z)), K(B(B(B(K(B(K(B(Z, K(B(Z, K(B(B(Z, B(Z, K(Z, B(B(Z, K(Z, B(K(Z, Z), Z))), B(K(B(Z, Z), Z), Z, Z)))), B(Z, Z)), Z, Z), Z)), B(B(K(Z, Z), B(K(Z, B(K(B(Z, Z, Z), Z, Z), B(Z, K(Z, Z)))), B(Z, B(Z, B(K(Z, Z, B(B(Z, K(B(B(K(Z, Z), Z), Z, Z), Z), B(B(Z, Z), Z, B(B(B(K(Z, B(Z, Z)), Z), Z), Z), Z)), B(Z, B(Z, Z, Z), K(Z, B(B(K(Z, Z), Z), K(Z, Z))), Z))), K(B(K(B(Z, Z), Z), K(Z, Z), K(Z, Z)), B(B(B(Z, B(Z, Z, Z), Z), K(B(Z, Z), B(K(Z, Z), Z), Z, Z)), B(Z, Z, Z, B(Z, B(B(B(Z, K(B(K(B(Z, Z), Z), Z), Z), Z), K(Z, Z, B(Z, K(Z, Z)), Z), Z), B(Z, Z))), B(Z, B(Z, B(Z, B(K(B(B(Z, Z, Z), Z), Z), B(Z, B(Z, Z, K(Z, Z)))))), B(K(Z, B(B(B(Z, Z), Z), K(Z, B(Z, K(B(K(Z, Z), K(B(Z, K(B(Z, K(Z, Z)), Z)), Z)), Z, Z))))), Z))))), Z), Z)))), B(K(Z, Z, Z), Z))), K(B(B(B(Z, Z), B(Z, Z)), Z), Z, Z)), Z), Z), B(B(K(Z, Z, Z), Z), Z)), Z), Z), Z), B(K(B(B(Z, Z), Z), Z, Z), Z)))), K(B(Z, B(Z, K(B(B(Z, Z), B(Z, Z), B(Z, Z)), Z))), Z)), K(B(Z, B(Z, Z)), Z)), Z)), Z), Z))), Z), Z), Z, Z)
+
+BR(Z, K(Z, Z), B(K(Z, Z), B(Z, K(Z, Z))), Z, Z, Z)
+
+BR(B(Z, Z, Z), B(B(Z, Z), B(B(Z, Z), K(B(B(Z, Z, Z, Z), K(Z, B(Z, Z, Z, Z))), B(Z, K(B(Z, K(B(B(Z, B(K(B(Z, B(B(Z, K(Z, B(Z, K(B(Z, Z), Z)))), K(Z, B(B(Z, Z, Z), Z, Z)))), B(K(Z, B(Z, Z)), Z, Z)), Z)), Z), Z)), Z)), Z))), Z, Z)
+
+Z(B(Z, K(Z, Z)))
+
+BR(B(Z, K(B(Z, B(K(Z, Z), B(B(Z, K(B(B(K(B(Z, Z), Z), B(B(Z, B(Z, Z)), Z)), Z), B(K(Z, Z), B(B(B(K(B(Z, B(K(B(Z, B(K(Z, B(K(Z, B(K(Z, Z), Z)), Z)), B(K(B(Z, Z, Z), Z, Z), B(Z, B(K(Z, Z), K(B(K(Z, B(Z, Z)), Z), Z)))), K(B(Z, Z), B(B(Z, B(Z, K(Z, Z))), B(Z, B(Z, K(Z, Z, Z))), B(Z, B(K(Z, B(Z, Z)), B(Z, Z), Z), Z, Z), Z, Z)))), B(Z, Z)), Z)), Z), B(Z, Z)), Z), Z)))), K(B(K(B(B(K(B(B(B(B(B(K(Z, Z), Z), Z), B(Z, Z)), Z), B(Z, B(Z, Z))), Z), Z, K(Z, B(Z, Z))), K(Z, Z)), Z), K(Z, Z)), Z)))), Z)), Z, Z)
+
+e(B(Z, Z), B(Z, Z))
+
+BR(Z, Z, Z)
+
+BR(K(B(K(B(Z, Z), B(Z, Z), Z, Z, B(Z, Z)), K(Z, Z)), B(K(Z, Z), B(Z, Z))), Z, Z)
+
+BR(K(B(B(B(Z, Z), Z), B(K(B(K(Z, B(B(B(Z, Z), B(Z, B(Z, Z))), B(Z, Z, Z))), K(Z, Z)), B(K(Z, Z), Z)), Z), Z), B(Z, K(Z, Z))), K(Z, Z), K(Z, Z))
+
+BR(B(B(Z, B(Z, B(Z, B(Z, Z)))), B(Z, B(Z, Z))), Z, Z)
+
+Z(B(Z, B(Z, B(B(B(K(Z, B(K(Z, B(Z, K(Z, B(K(B(B(Z, Z, Z), Z), B(K(Z, B(Z, K(B(K(Z, B(Z, B(K(Z, Z), B(Z, K(Z, Z), B(Z, K(Z, Z)))))), Z), B(Z, Z)))), B(Z, K(Z, Z), Z)), B(Z, Z)), Z)))), Z)), B(Z, Z, Z)), Z), Z)), Z))
+
+BR(Z, Z, Z)
+
+BR(Z, Z, Z)
+
+BR(Z, K(B(Z, B(Z, K(Z, Z)), K(Z, B(Z, Z))), Z), Z, Z)
+
+Z(B(B(Z, Z), Z))
+
+BR(K(B(Z, Z), Z), K(Z, B(B(K(Z, Z), Z), Z)), Z, Z)
+
+BR(Z, Z, Z, Z)

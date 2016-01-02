@@ -2,7 +2,7 @@
 #
 # split_tree.py
 #
-# Dependencies: networkx, matplotlib.pyplot, random, parse_graphs
+# Dependencies: networkx, matplotlib.pyplot, random, parse_graphs_format
 #
 #
 # This module can be used to:

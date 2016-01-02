@@ -141,7 +141,7 @@ e(**SC**(**Z**, **Z**), **SC**(**Z**, **Z**)) | An edge joining two star nodes a
   * **networkx**
   * **matplotlib.pyplot**
   * **random**
-  * **parse_graphs**
+  * **parse_graphs_format**
 
 
 #### Usage

@@ -117,7 +117,7 @@ Symbol | Meaning
 **K** | A clique that has been entered from another node
 **SX** | A star that has been entered from another node at one of its extremities
 **SC** | A star that has been entered from another node at its center
-**B** | a bipartite node that has been entered from another node
+**B** | A bipartite node that has been entered from another node
 e(**A**, **B**) | An edge that connects nodes **A** and **B**
 **A**(**B<sub>1</sub>**, ..., **B<sub>k</sub>**) | **B<sub>1</sub>**, ..., **B<sub>k</sub>** are neighbors of **A** (if **A** is **SR** or **SX**, then **B<sub>1</sub>** is connected to the center of **A**)
 

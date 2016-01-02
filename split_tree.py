@@ -237,7 +237,7 @@ def string_to_split_tree(s, parent_node=None):
     SX -- a star that has been entered from another node at one of its
           extremities
     SC -- a star that has been entered from another node at its center
-    B - a bipartite node that has been entered from another node
+    B -- a bipartite node that has been entered from another node
     e -- an edge that connects two nodes
 
     For example:

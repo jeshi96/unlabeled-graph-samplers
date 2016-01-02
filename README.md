@@ -113,9 +113,11 @@ Symbol | Meaning
 **Z** | A leaf node
 **KR** | A clique root (can only appear as the root of the tree)
 **SR** | A star root (can only appear as the root of the tree)
+**BR** | A bipartite root (can only appear as the root of the tree)
 **K** | A clique that has been entered from another node
 **SX** | A star that has been entered from another node at one of its extremities
 **SC** | A star that has been entered from another node at its center
+**B** | a bipartite node that has been entered from another node
 e(**A**, **B**) | An edge that connects nodes **A** and **B**
 **A**(**B<sub>1</sub>**, ..., **B<sub>k</sub>**) | **B<sub>1</sub>**, ..., **B<sub>k</sub>** are neighbors of **A** (if **A** is **SR** or **SX**, then **B<sub>1</sub>** is connected to the center of **A**)
 
@@ -138,6 +140,8 @@ e(**SC**(**Z**, **Z**), **SC**(**Z**, **Z**)) | An edge joining two star nodes a
 
   * **networkx**
   * **matplotlib.pyplot**
+  * **random**
+  * **parse_graphs**
 
 
 #### Usage
@@ -148,7 +152,7 @@ e(**SC**(**Z**, **Z**), **SC**(**Z**, **Z**)) | An edge joining two star nodes a
   string_to_split_tree(split_tree_string)
   ```
   Returns an internal split_tree representation corresponding to the specified
-  distance-hereditary or three-leaf power *split_tree_string* (typically this
+  distance-hereditary, three-leaf power, or parity *split_tree_string* (typically this
   string will have been returned by the distance-hereditary or three-leaf
   power samplers described above).
 
